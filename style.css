@@ -147,7 +147,7 @@
 }
 .content_button span{
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "AN";
     font-size: 15px;
     font-weight: 600;
     letter-spacing: -0.3px;
@@ -559,13 +559,12 @@
     color: #004275;
 }
 .product_contents{
-    background-image: url(img/Mobile-product-BG-2x.webp);
+    background-image: url(img/background3.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-.product_content_gap{
     padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 .product_content_azure{
     padding: 16px;
@@ -592,16 +591,208 @@
 .discover_content_space{
     margin-top: 32px;
 }
+.azure_model{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .azure_model_gap{
    margin-top: 2rem;
    background-image: url(img/card4.avif);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
    padding: 16px;
    border-radius: 1rem;
+   /* height: 100%;
+   aspect-ratio: 21/19; */
 }
-
+.model_space{
+    height: 220px;
+}
+.model_catalog h3{
+    font-family: "AB";
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -.05em;
+}
+.model_discover p{
+    font-size: 1rem;
+    font-family: "AN";
+    font-weight: 400;
+    line-height: 1.5rem;
+    /* letter-spacing: -.03em;
+    color: #004275; */
+}
+.model_contents{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.model_button a{
+    background-color: rgb(0,120,212);
+    height: 52px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    /* padding: 12px; */
+}
+.model_button span{
+    color: white;
+    font-family: "AB";
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+    padding-bottom: 2px;
+    padding: 12px;
+    text-align: center;
+}
+.azure_model_contents{
+    padding: 16px;
+}
+.ai_first_card{
+    background: white;
+    border-radius: 1rem;
+    padding: 16px;
+}
+.ai_card_image img{
+    width: 24px;
+    height: 24px;
+}
+.ai_card_image{
+    display: flex;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+}
+.card_content span{
+    font-family: "AB";
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -.03em;
+}
+.card_model_all{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.ai_card_contents{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.ai_card_a{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 32px;
+}
+.card_content_para p{
+    font-family: "AN";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* letter-spacing: -.03em; */
+}
+.card_a a{
+    font-family: "AB";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    color: #004275;
+}
+.openai_model{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+.ai_cards{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+.ai_view p{
+    text-align: center;
+}
+.ai_button{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.ai_text p{
+    font-family: "AN";
+    font-weight: 600;
+    font-size: .875rem;
+    color: #004275;
+}
+.ai_view span::after{
+    content: "";
+    font-family: "AM";
+    font-weight: 400;
+    line-height: 1;
+}
+.ai_view span{
+    background-color: #0078d4;
+    border: 2px solid;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+}
+.gartner_contents{
+    background-image: url(img/background4.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.gartner_gap{
+    padding: 16px;
+}
+.gartner_space{
+    background-color: white;
+    border-radius: 15px;
+}
+.gartner_micro{
+    padding: 8px 12px 0px;
+}
+.gartner_micro img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5rem;
+}
+.gartner_text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.gartner_all.gartner_text{
+    gap: 2rem;
+}
+.gartner_all{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.gartner_span span{
+    font-family: "AB";
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -.03em;
+}
+.gartner_p p{
+    font-family: "AN";
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+    letter-spacing: -.03em;
+}
 /* ssss */
 
 
