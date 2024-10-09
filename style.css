@@ -562,6 +562,7 @@
     background-image: url(img/Mobile-product-BG-2x.webp);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .product_content_gap{
     padding-top: 3.5rem;
@@ -591,6 +592,16 @@
 .discover_content_space{
     margin-top: 32px;
 }
+.azure_model_gap{
+   margin-top: 2rem;
+   background-image: url(img/card4.avif);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 16px;
+   border-radius: 1rem;
+}
+
 /* ssss */
 
 
