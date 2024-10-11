@@ -778,6 +778,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 16px;
 }
 .gartner_span span{
     font-family: "AB";
@@ -792,6 +793,257 @@
     font-size: 1.125rem;
     line-height: 1.7rem;
     letter-spacing: -.03em;
+}
+.gartner_blog a{
+    background-color: rgb(0,120,212);
+    height: 52px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    /* padding: 12px; */
+}
+.gartner_blog span{
+    color: white;
+    font-family: "AB";
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+    padding-bottom: 2px;
+    padding: 12px;
+    text-align: center;
+}
+.transform_contents{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    /* padding-top: 3rem; */
+}
+.transform_text{
+    margin-bottom: 12px;
+}
+.transform_text span{
+    font-family: "AB";
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 1rem;
+    letter-spacing: .08em;
+    margin-bottom: 12px;
+}
+.transform_para h2{
+    font-family: "AB";
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -.05em;
+}
+.IT_contents{
+    padding: 16px;
+    background-image: url(img/background5.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* padding-top: 3.5rem; */
+    padding-bottom: 3.5rem;
+}
+.IT_tabs{
+   overflow: scroll;
+   scrollbar-width: none;
+   
+}
+.IT_text{
+    width: 1332px;
+}
+.IT_all{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px 8px;
+}
+.tab_group_IT{
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px; 
+}
+.tab_group_IT a{
+    text-decoration: none;
+    border-right-style: solid;
+    border-right-color: rgb(189, 197, 210);
+    border-right-width: 1px;
+    box-sizing :border-box;
+    width: 221.333px;
+}
+.pro_button{
+    padding: 12px 16px 16px;
+    border-bottom: 4px solid #004275;
+}
+.pro_button span{
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "AB";
+    line-height: 1.5rem;
+    letter-spacing: -.03em;
+    color: #0E1726;
+}
+.pro_button_IT{
+    padding: 12px 16px 16px;
+}
+.pro_button_IT span{
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "AB";
+    line-height: 1.5rem;
+    letter-spacing: -.03em;
+    color: #0E1726;
+}
+.arrow_images{
+    /* padding-bottom: 40px; */
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+}
+.arrow_image_first button::after{
+    content: "";
+    font-family: "AM";
+    font-size: 1.125rem;
+    color: #004275;
+}
+.arrow_image_second button::after{
+    content: "";
+    font-family: "AM";
+    font-size: 1.125rem;
+    color: #004275;
+}
+.arrow_images .arrow_image_first button{
+    border: 2px solid #004275;
+    border-radius: 12.5rem;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+}
+.arrow_images .arrow_image_second button{
+    border: 2px solid #004275;
+    border-radius: 12.5rem;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.popular_IT{
+    padding-top: 1.5rem;
+    /* padding-bottom: 3rem; */
+}
+.popular_arrow span::before{
+    content: "";
+    font-family: "AM";
+    font-weight: 400;
+    /* font-size: 15px; */
+    background: rgb(0, 120, 212);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+.discover_card_explore span{
+    font-size: 15px;
+     
+ }
+ .popular_explore{
+     display: flex;
+     flex-direction: row;
+     gap: 8px;
+     justify-content: center;
+ }
+ .popular_text p{
+     color: #004275;
+     font-weight: 600;
+     font-size: .875rem;
+     line-height: 1.2rem;
+     font-family: "AB";
+ }
+ .explore_contents{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+    text-align: center;
+ }
+ .explore_text span{
+    font-family: "AB";
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -.05em;
+ }
+ .explore_computer{
+    padding: 16px;
+    margin: 24px 0px 0px;
+ }
+.explore_image img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.azure_global{
+    background-image: url(img/global.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+.global_button a{
+    background-color: rgb(0,120,212);
+    height: 52px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #b3daf0;
+    /* padding: 12px; */
+}
+.global_button span{
+    color: black;
+    font-family: "AB";
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+    padding-bottom: 2px;
+    padding: 12px;
+    text-align: center;
+}
+.global_gap{
+   padding-inline: 16px;
+   text-align: center;
+}
+.azure_global_contents span{
+    font-family: "AN";
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -.05em;
+    color: white;
+}
+.global_para{
+    margin-top: 16px;
+}
+.global_para p{
+    font-family: "AN";
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -.03em;
+    color: white;
+}
+.global_button{
+    margin-top: 24px;
+}
+.customer_image{
+    /* padding: 16px; */
+    background-image: url(img/customer.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 /* ssss */
 
