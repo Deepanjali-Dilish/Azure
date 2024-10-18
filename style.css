@@ -792,7 +792,7 @@
 .gartner_gap{
     padding-inline: 16px;
 }
-.gartner_space{
+.color{
     background-color: white;
     border-radius: 15px;
 }
@@ -1223,7 +1223,7 @@
 }
 .hp_cards_all{
     display: flex;
-    overflow: auto;
+    overflow: scroll;
     scrollbar-width: none;
 }
 .customers_azure_contents{
@@ -1560,6 +1560,12 @@
     font-weight: 400;
     line-height: 16px;
 }
+.head{
+    display: none;
+}
+.chatgpt{
+    display: none;
+}
 /* ssss */
 
 @media screen and (min-width:540px) {
@@ -1626,8 +1632,14 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr)
     }
+    .head{
+        display: none;
+    }
+    .chatgpt{
+        display: none;
+    }
 }
-@media screen and (min-width:860px){
+@media screen and (min-width:870px){
     .header_top{
         display: none;
     }
@@ -1637,24 +1649,376 @@
     .head_top{
         display: flex;
         flex-direction: row;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .head{
+        display: inline;
+    }
+    .explore{
+        display: flex;
+        flex-direction: row;
     }
     .head_contents{
         display: flex;
         flex-direction: row;
+        padding-right: 20px;
     }
     .head_logo img{
         margin-top: -3px;
         max-width: none;
         width: 108px;
     }
+    .head_azure span{
+        margin: -3px 0px 0px 20px;
+        font-family: "AB";
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .head_azure{
+        padding: 16px 6px 16px;
+    }
     .head_logo{
         padding: 16px 6px 16px 10px;
         margin-top: 1px;
+        float: left;
+        width: 137px;
     }
-    .head_azure span{
-        margin: -3px 0px 0px;
+    .head_products span::after{
+        font-family: "AM";
+        content: "";
+        position: absolute;
+        font-size: 8px;
+        display: inline-block;
+        color: currentColor;
+        font-weight: 700;
+        padding-top: 22px;
     }
-    
-}
+    .head_products {
+        display: flex;
+        flex-direction: row;
+        padding-right: 10px;
+    }
+    .head_products p{
+        padding: 16px 16px 12px  ;
+        margin: 1px -10px 0px 0px;
+    }
 
+    .head_spn::before{
+        border-left: 2px solid #000;
+        height: 24px;
+        content: " ";
+        position: absolute;
+        top: 15px;
+        margin-left: 7px;
+    }
+    .head_search span::after{
+        font-family: "AM";
+        content: "";
+        font-size: 16px;
+        margin-left: 2px;
+    }
+    .head_search{
+        padding-top: 20px;
+        padding-inline: 20px;
+    }
+    .container_contents{
+        position: absolute;
+        top: 170px;
+        background-color: unset;
+    }
+    .head_products p{
+        font-family: "AN";
+        color: #616161;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .web_contents{
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+        padding-top: unset;
+    }
+    .split{
+        width: 366px;
+        height: 376px;
+    }
+    .main_content_web img{
+        height: 628px;
+    }
+    .ai-chat-banner{
+        padding:32px 56px;
+        background: #004275;
+    }
+    .layout-gpt-cols{
+        display:flex;
+        flex-wrap:wrap;
+        column-gap:16px;
+        row-gap:8px;
+    }
+    .ai-assistant{
+        display:flex;
+        align-items:center;
+        flex-basis:calc(50% - 8px);
+        flex-grow:0;
+        flex-shrink:0;
+    }
+    .ai-assistant-flex{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        color:rgb(220, 238, 248);
+        column-gap:5px;
+        row-gap: 5px;
+        padding:12px 12px 12px 0px;
+    }
+    .assistant-content-head h2{
+        margin:0;
+        color:rgb(244, 250, 253);
+        font-family: "AB";
+        line-height: 2rem;
+        letter-spacing: -.05rem;
+    }
+    .assistant-badge img{
+        height:32.875px;
+        max-height:40px;
+        width:40px;
+        max-width:40px;
+    }
+    .assistant-content{
+        display:flex;
+        flex-direction:column;
+        row-gap:4px;
+        align-items:flex-start;
+    }
+    .assistant-content-para{
+        font-size:14px;
+        letter-spacing:-0.42px;
+        line-height:16px;
+        font-family: "AN";
+    }
+    .layout-ai-chat{
+        display:flex;
+        flex-direction:column;
+        row-gap:10px;
+        justify-content:center;
+        flex-basis:calc(50% - 8px);
+        flex-grow:0;
+        flex-shrink:0;
+    }
+    .ai-searchbar{
+        height:60px;
+        display:flex;
+        align-items:center;
+        box-sizing:border-box;
+        background-color:rgb(254, 254, 254);
+        border-radius:8px;
+    }
+    .ai-searchbar input{
+        width:100%;
+        padding:20px 60px 20px 16px;
+        border:0;
+        border-radius:8px;
+        font-size:15px;
+    }
+    .linear-border{
+        height:4px;
+        background: linear-gradient(90deg, rgb(10, 134, 196) 0.3%, rgb(113, 237, 232) 100%);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .border-div-plus{
+        border-radius: 8px;
+        border-bottom-right-radius:5px;
+        border-bottom-left-radius: 5px;
+        background-color:rgb(254, 254, 254);
+        width:100%;
+    }
+    .ai-search-btn{
+        padding:14px;
+        border:0;
+        background-color:transparent;
+    }
+    .ai-search-btn div{
+        width:24px;
+        height:24px;
+    }
+    .ai-list-tags{
+        list-style-type: none;
+        display:flex;
+        flex-direction: column;
+        row-gap:16px;
+        flex-wrap:wrap;
+    }
+    .ai-chat-message{
+        padding:8px 10px;
+        background-color: transparent;
+        border:1px solid rgb(141, 200, 232);
+        border-radius:8px;
+        color:rgb(244, 250, 253);
+        font-size:13px;
+        font-weight: 400;
+        height:38px;
+    }
+    .chatgpt{
+        display: inline;
+    }
+    .main_discover_card{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+    }
+    .main_discover_card_contents{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        gap: 0.75rem;
+        justify-content: space-between;
+        flex: 1 1 auto;
+    }
+    .ai_cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+    .ai_first_card{
+        background: white;
+        border-radius: 1rem;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 auto;
+    }
+    .button_blue{
+        display: none;
+    }
+    .choose_next_card_contents{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        gap: 0.75rem;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .bulid_azure{
+        justify-content: none;
+    }
+    .bulid{
+        width: 40%;
+        height: 400px;
+        overflow: scroll;
+    }
+    .explore_button_image{
+        position: absolute;
+        top: 161px;
+        right: 0;
+        width: 50%;
+    }
+    .solutions_contents{
+        position: relative;
+    }
+    .color{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .gartner_space{
+        flex-basis: 300%;
+    }
+    .gartner_micro img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        object-fit: cover;
+    }
+    .gartner_blog a{
+        width: 127.594px;
+    }
+    .arrow_images{
+        display: none;
+    }
+    .explore_image{
+        width: 66%;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+    .global_button a{
+        width: 150.906px;
+    }
+    .global_button{
+        display: flex;
+        justify-content: center;
+    }
+    .customer_card_first{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .customer_card_first_image{
+        flex-basis: 200%;
+    }
+    .customer_card_first_image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .hp_blog a{
+        width: 106.16px;
+    }
+    .customer_arrow{
+        display: none;
+    }
+    .all_images li{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .all_images{
+        display: flex;
+        padding-right: 64px;
+        padding-left: 64px;
+        padding-top: 15px;
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+    }
+    .image{
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px; 
+    }
+    /* .news{
+        display: flex;
+        flex-direction: row;
+        padding-left: 56px;
+        padding-right: 56px;
+        height: 66px;
+    }
+    .slider{
+        display: flex;
+        flex-direction: row;
+    }
+    .slider li{
+        list-style: none;
+        min-width: max-content;
+    }
+    .slider a{
+        text-decoration: none;
+        margin-inline-end: 48px;
+        font-size: 16px;
+        font-family: "AN";
+        letter-spacing: -0.48px;
+        line-height: 24px;
+    }
+    .dropdown{
+        display: flex;
+        align-items: center;
+    }
+    .slid a{
+        border-bottom: 1px solid;
+    } */
+
+
+}
 
